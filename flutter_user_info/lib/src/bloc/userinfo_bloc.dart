@@ -12,8 +12,8 @@ class UserinfoBloc extends Bloc<UserinfoEvent, UserinfoState> {
   Stream<UserinfoState> mapEventToState(UserinfoEvent event) async* {
     if (event is Fetch) {
       try {
-        yield UpdatedUserinfoState(UserInfo(
-            name: "Sam", age: 25, email: "sam0321@gmail.com"));
+        yield UpdatedUserinfoState(
+            UserInfo(name: "Sarim", age: 24, email: "sam0321@gmail.com"));
       } catch (_) {}
     }
   }
